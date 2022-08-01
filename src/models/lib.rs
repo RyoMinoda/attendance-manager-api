@@ -18,3 +18,7 @@ impl<T: Serialize> Responce<T> {
         json.expect("couldn't serialize data object")
     }
 }
+
+pub trait Seed<T> {
+    fn get_seed() -> Vec<T>;
+}

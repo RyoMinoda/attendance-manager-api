@@ -7,7 +7,9 @@ edition = "2021"
 
 [dependencies]
 actix = "0.13"
-actix-web = { version = "4" }
+actix-web = { version = "4", features = ["openssl"] }
+openssl-sys = "0.9"
+openssl = "0.10"
 actix-web-actors = "4.0.0"
 deadpool-postgres = { version = "0.10.2", features = ["serde"] }
 serde = { version = "1.0.137", features = ["derive"] }
